@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            box-sizing: border-box;
+        }
+        h1{
+            color:azure;
+        }
+        body{
+            background-image: url("desktop-wallpaper-dark-green-shine-plain-full-black-shine-thumbnail.jpg");
+            background-size: cover;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+        }
+        .container{
+            position: relative;
+            border-radius: 20px;
+            background-color: aquamarine;
+            width:80%;
+            max-width:400px;
+            box-shadow:0 0 5px #E7F7F4;
+            margin-top: 11vh;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+        h1{
+            font-size: 30px;
+            color:#073727;
+            text-align: center;
+        }
+        .input_field{
+            position: relative;
+            margin:30px;
+            border-bottom: 2px solid white;
+        }
+        .input_field label{
+            font-size: 16px;
+            color:#073727;
+            pointer-events: none;
+        }
+        .input_field input{
+            width:300px;
+            height:40px;
+            font-size: 16px;
+            color:#073727;
+            padding:0 5px;
+            background:transparent;
+            border: none;
+            outline:none;
+        }
+        .Sign_Up{
+            position: relative;
+            width:100%;
+            height:40px;
+            background: rgb(241,238, 240);
+            font-size: 18px;
+            color:black;
+            cursor:pointer;
+            border-radius:30px;
+            border:none;
+            outline:none;
+            align-items: center;
+            justify-content: center;
+        }
+        .Sign_Up:hover{
+            background-color: rgb(255,6,110);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Sign Up:</h1>
+    
+    <form action="http://localhost/Project1/Signup.php" method="post">
+        <h2>
+        <div class="input_field">
+            <label for="email_id"><b>Email:</b></label><br>
+            <input type="text" placeholder="Enter Email" style="font-family: Georgia, 'Times New Roman', Times, serif;" id="email" name="email" required>
+        </div>
+        <div class="input_field">
+            <label for="password"><b>Create Password:</b></label>
+            <input type="password" placeholder="Enter Password" style="font-family: Georgia, 'Times New Roman', Times, serif;" id="password" name="npassword" required>
+        </div>
+        <div class="input_field">
+            <label for="password"><b>Confirm Password:</b></label><br>
+            <input type="password" placeholder="Enter Password" style="font-family: Georgia, 'Times New Roman', Times, serif;" id="password" name="cpassword" required>
+        </div>
+        <div style="text-align: center;">
+            <input style="width:200px;height:50px"type="submit" value="Sign Up" class="Sign_Up">
+        </div>
+        </h2>
+        
+    </form>
+</div>
+</body>
+</html>
